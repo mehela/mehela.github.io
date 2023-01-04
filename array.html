@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<p>My favorite breakfast foods 🥞</p>
+
+</head>
+<body>
+<div id = box></div>
+<style type="text/css">
+	
+</style>
+<script type="text/javascript">
+	var foods = ["pancakes" , "shakshuka" , "crepe" , "smoothie" , "french toast" , "firfir" , "chepchepza" , "kinche"]
+	document.addEventListener("click" , function(){
+	var random = Math.round(Math.random()*7)
+	box.innerText = (foods[random])
+})
+ 
+
+
+</script>
+</body>
+
+
+</html>
