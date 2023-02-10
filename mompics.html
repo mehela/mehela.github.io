@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+<style type="text/css">
+	
+	body{
+		background-color: #FAA0A0	;
+	}
+
+	h1{
+		font-family: 'Work Sans', sans-serif;
+	}
+</style>
+</head>
+<body>
+
+<h1>happy birthday and almost valentines day mama! i love you so much and i dont know what i would do without you. i hope you enjoy this card i made in my computer science class. to many more memories and more adorable pics like these. 🥰</h1>
+
+<script type="text/javascript">
+
+
+	
+	function makeSquare (x) {
+
+            var pics = document.createElement('div');
+                        document.body.appendChild(pics);
+            pics.style.width = "200px";
+            pics.style.height = "200px";
+            pics.style.display = "inline-block";
+            pics.style.margin = "10px";
+            pics.style.backgroundRepeat = "no-repeat";
+            pics.style.border = "1px";
+
+            pics.style.backgroundColor = "#FAA0A0";
+
+            pics.style.backgroundImage = "url(./pics/pic" + i + ".jpg)";
+
+            pics.style.backgroundSize = "cover";
+            pics.style.id = "pics" + x;};
+
+
+    for (var i = 1; i < 11; i++) 
+    { makeSquare(i);}
+</script>
+
+</body>
+</html>
