@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.logo{
+			background-image: url("");
+				width: 130px;
+       		 	height: 125px;
+        		margin: 5px;
+        		display: inline-block;
+        		background-size: contain;
+        		background-repeat: no-repeat;
+
+		}
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function makeLogo(){
+			var logo = document.createElement('div');
+			logo.classList.add('logo');
+			document.body.appendChild(logo);
+		}
+
+		setInterval(makeLogo, 1000)
+	</script>
+</body>
+</html>
