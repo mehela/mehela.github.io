@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+
+		body{
+
+			background-image: url(street.jpg);
+			background-size: 100%;
+		}
+		
+
+		#buggy{
+
+	width: 700px;
+	height: 500px;
+	background-image:url(5.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 470px;
+
+		}
+	</style>
+</head>
+<body>
+
+<h1>Let's walk through the shops. Use the arrow keys to move forward!</h1>
+
+<div id="end">
+	<div class="button">
+
+	<div id="buggy"></div>
+
+	<script type="text/javascript">
+		buggy.style.left = "0px";
+
+		 var x = parseInt(buggy.style.left);
+
+		document.addEventListener("keydown", function(event){
+			console.log(event.keyCode)
+
+
+
+			if (event.keyCode == 39) {
+				x = x+10; 
+				buggy.style.left = x + "px";
+
+			}
+
+			else if (event.keyCode == 37) {
+				x = x-10; 
+				buggy.style.left = x + "px";
+				buggy.style.backgroundImage = "url(5.png)";
+
+			}
+
+				if (x>500){
+					window.open("flood.html")
+				}
+
+
+
+			
+		})
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

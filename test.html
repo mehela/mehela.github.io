@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Quiz</title>
+	<style>
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.pi {
+			margin: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Image Quiz</h1>
+	<div class="container">
+		<img class="pi" src="m1.jpg" alt="Image 1" onclick="checkAnswer(1)">
+		<img class="pi" src="m2.jpg" alt="Image 2" onclick="checkAnswer(2)">
+		<img class="pi" src="m3.jpg" alt="Image 3" onclick="checkAnswer(3)">
+		<!-- Add more images as needed -->
+	</div>
+	<p id="result"></p>
+
+	<script>
+		// Define the correct answer index
+		const correctAnswer = 2; // Example: Image 2 is the correct answer
+
+		// Function to check the selected answer
+		function checkAnswer(selectedIndex) {
+			if (selectedIndex === correctAnswer) {
+				document.getElementById("result").textContent = "Correct! Moving on to the next level.";
+				// Add your code to move on to the next level or perform any desired action
+			} else {
+				document.getElementById("result").textContent = "Incorrect! Try again.";
+			}
+		}
+	</script>
+</body>
+</html>
